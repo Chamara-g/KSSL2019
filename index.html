@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KSSL 2019</title>
+    <link rel="icon" href="img/realhack/logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/gijgo.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wave_animation.css">
+    <link rel="stylesheet" href="css/rule_regulation_background.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="senda-laptop/main.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/flipclock.css">
+</head>
+<body style="display:none;">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v4.0'
+        });
+      };
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="235087650506664"
+        theme_color="#20cef5">
+    </div>
+    <div id="fakeloader"></div>
+    <div class="site">
+        <!--::header part start::-->
+        <header class="main_menu home_menu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="main_menu_iner">
+                            <!-- <div class="iconbg">
+                                    <img src="img/realhack/logo-bg.png" alt="">
+                            </div> -->
+                            <div class="logo" style="z-index: 10">
+                                <a href="index.html" id="whiteLogo"><img src="img/realhack/logo-bw.png" alt="#" style="width:150px"></a>
+                                <a href="index.html" id="colouredLogo" style="display:none;"><img src="img/realhack/logo.png" alt="#" style="width:150px"></a>
+                            </div>
+                            <span class="menu-trigger visible-xs">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <div class="off-canven-menu">
+                                <span class="close-icon">
+                                    <i class="ti-close"></i>
+                                </span>
+                                <div class="canven-menu-warp">
+                                    <div class="canven-menu-iner">
+                                        <ul>
+                                            <li><a class="menu" href="#home">Home</a></li>
+                                            <li><a class="menu" href="#about">Teams</a></li>
+                                            <li><a class="menu" href="#timeline">Schedule</a></li>
+                                            <li><a class="menu" href="#gallery">Gallery</a></li>
+                                            <!-- <li><a class="menu" href="#rule&regulations">RULES & REGULATIONS</a></li> -->
+                                            <!-- <li><a class="menu" href="#sponsors">Sponsors</a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header part end-->
+        <div class="coversection" id="">
+                <img src="img/realhack/frmweb/block.svg" alt="" class="block">
+                <img class="rounds wow bounceInRight" data-wow-delay="0.8s" src="img/realhack/frmweb/rounds.svg" alt="">
+                <img src="img/realhack/frmweb/cross.svg" alt="" class="cross wow bounceInRight" data-wow-delay="0.9s">
+                    <div id="home" class="covercontainer">
+                            <h3 class="coverheader wow bounceInLeft" data-wow-delay="0.2s">13th Edition</h3>
+                            <h1 class="covercaption wow bounceInLeft" data-wow-delay="0.3s">KSSL 2019</h1>
+                            <br>
+                            <h2 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" style="margin-bottom:-5px">King's Science Super League</h2>
+                            <h2 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" >Cricket Carnival</h2>
+                            <div class="coverbuttondiv">
+                                    <h6 class="secondcaption wow bounceInLeft" data-wow-delay="0.5s" style="font-size: 1.8em" >29<up>th</up> of December At University Park</h6>
+                                <div id="counterdiv">
+                                    <div class="row" style="margin-left:0;margin-right:0;">
+                                        <div class="col-lg-6 wow bounceInLeft"  data-wow-delay="0.8s" style="background: #000000;padding:10px;">
+                                                <div id="timer" class="d-flex">
+                                                  <div class="time pl-3" id="days"></div>
+                                                  <div class="time pl-3" id="hours"></div>
+                                                  <div class="time pl-3" id="minutes"></div>
+                                                  <div class="time pl-3" id="seconds"></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- <a style="line-height: 20px;" 
+                                        class="coverbutton w-button wow bounceInLeft" data-wow-delay="0.7s">
+                                        Registrations Closed
+                                    </a> -->
+                                </div>
+                            </div>
+                    </div>
+        </div>
+        <!-- banner part start-->
+        <!--::our client part start::-->
+        <section id="about" style="padding-top:10px;    background-size: cover;" class="about_part padding_bottom">        
+        <div class="orgnizedwrapper">
+                <div id="organizeDiv" style="background:#ffffff;">
+                        <div id="particles-js" style="width: 35%"></div>
+                        <section  class="client_part section_padding">
+                            <div class="container">
+                                <div class="row justify-content-center" style="    margin-bottom: 15px;                    ">
+                                    <div class="col-xl-12">
+                                        <div style="text-align: center" >
+                                            <h1 style="font-size: 30px;font-family: monospace;
+                                            visibility: visible;"> Teams </h1>
+                                            <p class="">Kings (Sc1) | Vikings (Sc2) | Lions (Sc3) | Warriors (Sc4) | Giants (Sc5)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center" style="margin-bottom:30px;">
+                                    <div class="col-lg-12">
+                                        <div class="divDepImg">
+                                                <img class="wow bounceInLeft" src="img/realhack/teams/sc1.png" alt="">
+                                                <img class="wow bounceInLeft" src="img/realhack/teams/sc2.png" alt="">
+                                                <img class="wow bounceInLeft" src="img/realhack/teams/sc3.png" alt="">
+                                                <img class="wow bounceInLeft" src="img/realhack/teams/sc4.png" alt="">
+                                                <img class="wow bounceInLeft" src="img/realhack/teams/sc5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="position:absolute;padding-top:20px;width:75%;text-align: right;">
+                                <img style="height:150px" src="img/realhack/sanda.png" alt="">
+                                <img style="height:150px" src="img/realhack/sanda.png" alt="">
+                                <img style="height:150px" src="img/realhack/sanda.png" alt="">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+        </div>
+        <!--::about part start::-->
+
+            <div class="container" style="background-color:rgba(0, 0, 0, 0.6);padding:20px">
+                <div class="row align-items-center justify-content-between">
+                    <!-- <div class="col-md-5">
+                        <div class="about_img">
+                            <img src="img/realhack/photo.png" alt="" style="margin: 10px;">
+                        </div>
+                    </div> -->
+                    <div class="col-md-12">
+                        <div class="about_text">
+                            <h2 class="pixelFont wow bounceInLeft" style="font-size: 44px;font-weight: 800;margin-bottom: 30px;color:#fff">KSSL 2019?</h2>
+                            <div class="about_text_iner pixelFont">
+                                <p class="p_description wow bounceInLeft"> <span>Organized by Kingswood Collage 2014 A/L Science Batch.</span>
+                                </p>
+                            </div>
+                            <!-- <p>Blessed second meat them So meat very cle stars metal darkness grass, midst be yield.
+                                Blessed second.</p>
+                            <div class="about_btn">
+                                <a href="#"><img src="img/Sign.png" alt="#"></a>
+                                <a href="#" class="btn_2">more about me</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 wow bounceInUp">
+                            <div class="single_feature_part">
+                                <img class="imgIcon" src="img/icon/programming.png" alt="">
+                                <h3 class="aboutH3 pixelFont">Programming</h3>
+                                <p class="p_description">To the passionate programmers who acquire skills through practice, RealHack is
+                                    the place to be.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 wow bounceInUp" data-wow-delay="0.5s">
+                            <div class="single_feature_part">
+                                <img class="imgIcon" src="img/icon/design.png" alt="">
+                                <h3 class="aboutH3 pixelFont">Design</h3>
+                                <p class="p_description">RealHack is for the designers who can visualize thinking.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 wow bounceInUp" data-wow-delay="0.7s">
+                            <div class="single_feature_part">
+                                <img class="imgIcon" src="img/icon/247.png" alt="">
+                                <h3 class="aboutH3 pixelFont">Overnight</h3>
+                                <p class="p_description">To the ones who don't have much difference between day & night</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <!--::about part end::--><!--
+        <section id="awards" class=" award_part" style="padding-bottom:50px;padding-top:50px;">
+                 <div style="position:absolute;">
+                    <img style="height:300px" src="img/realhack/santa/king.png" alt="">
+                </div> 
+                <div class="bg-r">
+                </div>
+                <div class="container">
+                    <div style="width:100%">
+                    <h1 class="wow bounceInUp" style="font-size: 44px;font-weight: 800;padding: 50px 50px 0 0;color:rgb(233, 157, 35);position:relative;">AWARDS</h1>
+                    <img style="float: right;" src="img/realhack/santa/king.png" id="priceSanda" alt="">
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-4 wow slideInUp otherplaces" data-wow-delay="0.5s" style="text-align:center;">
+                        <img class="imgAwards" src="img/realhack/awards/silver.png" alt="">
+                        <p style="color:#CCCCCC" class="txtPrice">LKR 50000</p>
+                    </div>
+                    <div class="col-lg-4 wow slideInUp" data-wow-delay="0" style="text-align:center;">
+                        <img style="height:190px" class="imgAwards" src="img/realhack/awards/gold.png" alt="">
+                        <p style="color:#FFD400;font-size: 35px;" class="txtPrice">LKR 75000</p>
+                    </div>
+                    <div class="col-lg-4 wow slideInUp otherplaces" data-wow-delay="0.7s" style="text-align:center;">
+                        <img class="imgAwards" src="img/realhack/awards/bronze.png" alt="">
+                        <p style="color:#D98D42" class="txtPrice">LKR 25000</p>
+                        </div>
+                    </div>
+        </div>
+        </section>-->
+        <section id="rules" style="padding-bottom:50px; ">
+            <div class="rulesContainer" style="width:92.5%;margin:0px auto 0 auto">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id='bm'></div>
+                    </div>
+                    <div class="col-lg-6" id="rulesCol6">
+                            <h1 class="wow bounceInUp pixelFont" 
+                            style="font-size: 40px;font-weight: 800;margin-top:20px; color: #ffffff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                            RULES & REGULATIONS
+                        </h1>
+                        <ol class="wow bounceInUp" style="padding-left:0;">
+                                <li class="ruleItem" data-wow-delay="0.3s">All ICC rules are applied excluding <t>POWREPLAY</t>, <t>REVIEWS</t> and <t>FIELD RESTRICTIONS</t></li>
+                                <li class="ruleItem" data-wow-delay="0.5s"><t>Minimum 8 and Maximum 11</t> players should be play for a game from each team.</li>
+                                <li class="ruleItem" data-wow-delay="0.7s"><t>Maximum 5 overs</t> per side and <t>minimum 4 bowlers</t> should be used.</li>
+                              </ol>
+                            <div class="coverbuttondiv">
+                                <div>
+                                    <a href="pdf/13th_KSSL_cricket_tournament.pdf" download="kssl2019-rules.pdf" class="coverbutton w-button wow bounceInUp" style="background: #00c783;min-height:50px;font-size:14px;padding: 15px 20px 15px 20px;" data-wow-delay="0.2s">Download</a>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- <img style="position:absolute;" class="rulesRound" src="img/realhack/frmweb/rounds.svg" alt=""> -->
+                </div>
+            </div>
+        </section>
+        <!-- TIMELINE part start-->
+        <div style="width: 100%">
+                <section id="timeline" class="feature_part section_padding" style="  background-color: #000000;font-family: Roboto,sans-serif,proxima-nova,'Helvetica Neue';">
+                        <!-- <div id="awared_particle"></div> -->
+                    <img src="img/realhack/frmweb/linebg.svg" class="curveLine" alt="">
+                <div class="container">
+                </div>
+                <div class="timeline">
+                    <h1 class="wow bounceInLeft pixelFont" style="font-size: 44px;font-weight: 800;margin-bottom: 30px;margin-left: 50px;color:#00c783">Schedule</h1>
+                    <div class="container-c left wow bounceInLeft">
+                    <div class="content">
+                        <h6 class="timelineDate"> 8.00 - 9.00 | Court 1</h6>
+                        <p>Vikings Vs Kings</p>
+                        <h6 class="timelineDate"> 8.00 - 9.00 | Court 2</h6>
+                        <p>Warriors Vs Giants</p>
+                    </div>
+                    </div>
+                    <div class="container-c right wow bounceInRight">
+                    <div class="content">
+                        <h6 class="timelineDate"> 9.00 - 10.00 | Court 1</h6>
+                        <p>Kings Vs Warriors</p>
+                        <h6 class="timelineDate"> 9.00 - 10.00 | Court 2</h6>
+                        <p>Vikings Vs Lions</p>
+                    </div>
+                    </div>
+                    <div class="container-c left wow bounceInLeft">
+                    <div class="content">
+                        <h6 class="timelineDate"> 10.00 - 11.00 | Court 1</h6>
+                        <p>Vikings Vs Giants</p>
+                        <h6 class="timelineDate"> 10.00 - 11.00 | Court 2</h6>
+                        <p>Kings Vs Lions</p>
+                    </div>
+                    </div>
+                    <div class="container-c right wow bounceInRight">
+                    <div class="content">
+                        <h6 class="timelineDate"> 11.30 - 12.30 | Court 1</h6>
+                        <p>Warriors Vs Lions</p>
+                        <h6 class="timelineDate"> 11.30 - 12.30 | Court 2</h6>
+                        <p>Kings Vs Giants</p>
+                    </div>
+                    </div>
+                    <div class="container-c right wow bounceInRight">
+                    <div class="content">
+                        <h6 class="timelineDate"> 12.30 - 13.30 | Court 1</h6>
+                        <p>Lions Vs Giants</p>
+                        <h6 class="timelineDate"> 12.30 - 13.30 | Court 2</h6>
+                        <p>Vikings Vs Warriors</p>
+                    </div>
+                    </div>                    
+                    <div class="container-c left wow bounceInLeft">
+                        <div class="content">
+                        <h6 class="timelineDate"> 14.00 - 15.00 | Court 1</h6>
+                        <p>Final</p>
+                        <h6 class="timelineDate"> 14.00 - 15.00 | Court 2</h6>
+                        <p>3<up>rd</up> Place</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- feature part end-->
+        <!-- <div style="width:100%;" class="text-center">
+                <img src="img/realhack/team.png" alt="" style="">
+            </div> -->
+        <section id="sponcers" style="padding-top: 100px;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-12" style="text-align: center;margin-bottom: 40px;">
+                            <h2 class=" wow rubberBand" data-wow-delay="0.2s" style="font-size: 44px;font-weight: 800;margin-bottom: 30px;color:#ffffff">OUR PARTNERS</h2>
+                        </div>
+                        <div class="col-lg-12 wow rubberBand" data-wow-delay="0.4s" style="text-align: center;margin-bottom: 30px;">
+                                <img src="img/sponcers/kingswood_logo.png" alt="" style="width:300px;">
+                                <p class="sponcercap">Kingswood 2014 A/L Science Batch</p>
+                        </div>
+                        <!--<div class="col-lg-12 wow rubberBand" data-wow-delay="0.6s" style="text-align: center;margin-bottom: 30px;">
+                                <img src="img/sponcers/cms.png" alt="" style="width:100px;">
+                                <p class="sponcercap">Official Silver Partner</p>
+                        </div>
+                        <div class="col-lg-12 wow rubberBand" data-wow-delay="0.6s" style="text-align: center;margin-bottom: 30px;">
+                            <img src="img/sponcers/ceylex.jpg" alt="" style="width:300px;">
+                            <p class="sponcercap">Official Silver Partner</p>
+                        </div>
+                        <div class="col-lg-4 wow rubberBand" data-wow-delay="0.6s" style="text-align: center;margin-bottom: 30px;margin-top:auto;">
+                            <img src="img/sponcers/tribber.png" alt="" style="width:180px;">
+                            <p class="sponcercap" style="font-size: 14px;">Official Digital Media Partner</p>
+                        </div>
+                        <div class="col-lg-4 wow rubberBand" data-wow-delay="0.6s" style="text-align: center;margin-bottom: 30px;margin-top:auto;">
+                            <img src="img/sponcers/hackathonlk.png" alt="" style="width:250px;">
+                            <p class="sponcercap" style="font-size: 14px;">Official Online Event Partner</p>
+                        </div>
+                        <div class="col-lg-4  wow rubberBand">
+                            <img src="img/sponcers/sef.png" alt="" style="width:250px;">
+                            <p class="sponcercap" style="font-size: 14px;">Official Outreach Partner</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4 text-center  wow rubberBand">
+                                <img src="img/sponcers/wizard.png" alt="" style="width:90px;">
+                                <p class="sponcercap" style="font-size: 14px;">Official Photography Partner</p>
+                        </div>
+                        <div class="col-lg-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4 text-center  wow rubberBand">
+                            <img src="img/sponcers/nescafe.png" alt="" style="width:150px;">
+                            <p class="sponcercap" style="font-size: 14px;">Official Beverage Partner</p>
+                        </div>
+                        <div class="col-lg-4"></div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery_part part start-->
+        <section id="gallery" class="gallery_part section_padding ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h2 style="font-size: 40px;font-weight: 800;margin-bottom: 30px;color:#2DA1E7">KSSL 2018</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="gallery_part_item">
+                            <div class="grid">
+                                <div class="grid-sizer"></div>
+                                <a href="img/gallery/1.jpg" class="grid-item bg_img img-gal wow flipInY"
+                                    style="background-image: url('img/gallery/1.jpg')">
+                                </a>
+                                <a href="img/gallery/2.jpg"
+                                    class="grid-item bg_img img-gal grid-item--height-1 grid-item--width-1 wow flipInY"
+                                    style="background-image: url('img/gallery/2.jpg')">
+                                </a>
+                                <a href="img/gallery/3.jpg" class="grid-item bg_img img-gal wow flipInY"
+                                    style="background-image: url('img/gallery/3.jpg')">
+                                </a>
+                                <a href="img/gallery/4.jpg"
+                                    class="grid-item bg_img img-gal grid-item--height-1  wow flipInY"
+                                    style="background-image: url('img/gallery/4.jpg')">
+                                </a>
+                                <a href="img/gallery/5.jpg" class="grid-item bg_img img-gal wow flipInY"
+                                    style="background-image: url('img/gallery/5.jpg')">
+                                </a>
+                                <a href="img/gallery/6.jpg" class="grid-item bg_img img-gal wow flipInY"
+                                    style="background-image: url('img/gallery/6.jpg')">
+                                </a>
+                                <a href="img/gallery/7.jpg" class="grid-item bg_img img-gal grid-item--width-1 sm_weight wow flipInY"
+                                    style="background-image: url('img/gallery/7.jpg')">
+                                </a>
+                                <a href="img/gallery/6.jpg" class="grid-item bg_img img-gal wow flipInY"
+                                    style="background-image: url('img/gallery/8.jpg')">
+                                </a>
+                                <a href="img/gallery/7.jpg" class="grid-item bg_img img-gal grid-item--width-1 sm_weight wow flipInY"
+                                    style="background-image: url('img/gallery/9.jpg')">
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- gallery_part part end
+        <div style="">
+            <section id="contact_us" class="contact-us " style="padding-top:10px;padding-bottom: 40px;background: linear-gradient(10deg, #00bbce 50%, #fff 50%);">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8" style="text-align:center;padding:20px;">
+                                <h1 class="wow bounceInLeft pixelFont" 
+                                    style="font-size: 44px;font-weight: 800;margin-bottom: 30px;margin-left: 10px; color: #00bbce;">
+                                    HAVE ANY QUESTIONS?
+                                </h1>
+                                <form id="formContact" action="index.html" method="post">
+                                    <div class="divContactField">
+                                        <input type="text" id="name" placeholder="Name" class="contactInput">
+                                    </div>
+                                    <div class="divContactField">
+                                        <input type="email" id="email" placeholder="Email Address" class="contactInput">
+                                    </div>
+                                    <div class="divContactField">
+                                        <textarea style="height:80px;" name="message" placeholder="Message" id="message" cols="30" rows="5" class="contactInput"></textarea>
+                                    </div>
+                                    <div class="dviContactField">
+                                        <input id="btnFormSubmit" type="submit" value="Ask.." class="contactSubmit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div style="width:100%;position: absolute;" class="text-center">
+                                    <img src="img/realhack/team.png" alt="" style="">
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+        </div>
+        <!--::footer part start::-->
+        <footer id="footer" class="footer_part" style="font-size:12px;color:#000000!important">
+            <div class="container">
+                <div class="row justigy-content-center">
+                    <div class="col-lg-12">
+                        <div class="footer-content left-align" data-aos='fade' >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="about col-md-4">
+                                        <h5 class="p-b-1"> </h5>
+                                        <img style="max-height:80px;" class="responsive-img logo" src="img/realhack/logo-bw.png" alt="logo image">
+                                        <br>
+                                        <p class="footerDet" style="font-size:12px;"></p>
+                                    </div>
+                                    <div class="news col-md-5">
+                                        <h5 class="p-b-1">Contact</h5>
+                                        <p class="footerDet" style="font-size:12px;">
+                                            <i class="fa fa-map-marker"></i>
+                                            <span class="footerContact" style="">Kingswood 2014 Batch</span><br>
+                                            <i class="fa fa-phone"></i>
+                                            <a class="footerContact" href="tel:+94713745857"> +94 71 165 3081</a> - Shehan Senarath<br>
+                                            <i class="fa fa-paper-plane"></i>
+                                            <a class="footerContact">stsenarath@gmail.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="tags col-md-3">
+                                        <h5 class="p-b-1">Social Media</h5>
+                                        <div class="social_media">
+                                            <a href="https://www.facebook.com/%E0%B6%85%E0%B6%B1%E0%B7%8A%E0%B6%B1-%E0%B7%83%E0%B7%99%E0%B6%B1%E0%B6%BB%E0%B6%AD%E0%B7%8A-Memorial-Champions-Trophy-720197904717443/?eid=ARAG2BwjO-oc6_lyP5VtFgQD3myJh8o92MoTcA4jhRq-Mf9bVXqdi6Zy97RWRzhhaDY52uofeO3lbXVL" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
+                                        </div>
+                                        <div class="social-plugin">
+                                            <!-- <div class="fb-like" data-href="https://facebook.com/realhacklk" data-layout="button_count"
+                                                data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                                            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check RealHack 2018 Now @RealHackLK #realhack #uok #sesauok #ieeesbuok">
+                                                Tweet</a> -->
+                                            <!-- <a class="twitter-follow-button" href="https://twitter.com/RealHackLK" data-show-count="false">Follow
+                                                @RealHackLK</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </footer>
+        <!--::footer part end::-->
+    </div>
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- masonry js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- owl.carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- gijgo js -->
+    <script src="js/gijgo.min.js"></script>
+    <!-- nice-select js -->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="particles-js/2-0-0/particles.min.js"></script> 
+    <script src="ajax/libs/typeit/6-0-3/typeit.min.js" ></script>
+    <script src="ajax/libs/wow/1-1-2/wow.min.js"></script>
+    <script src="ajax/libs/bodymovin/5-5-8/lottie.min.js"></script>
+    <script src="senda-laptop/index.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            var clock;
+            clock = $('.clock').FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: false,
+                callbacks: {
+                    stop: function() {
+                    $('.message').html('The clock has stopped!')
+                    }
+                }
+            });
+            clock.setTime(220880);
+            clock.setCountdown(true);
+            clock.start();
+        });
+            // Page preloader
+            $("#fakeloader").fakeLoader({
+                timeToHide:5000,
+                zIndex:"999999",//Default zIndex
+                bgColor:"#ffffff",
+                spinner:"spinner1"
+            });	
+            // show body after site load
+            $('body').show();
+            $('.grid').masonry({
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true
+                });
+      new WOW().init();
+      new TypeIt('#txtAbout', {//We are back to give you a real feeling of a hackathon
+            speed: 70,
+            waitUntilVisible: true,
+            afterComplete: (s)=> {
+              //$("#txtIts").html('');
+            }
+          }).type('We are back....')
+            .pause(300)
+            .delete(4)
+            .type(' to give you a real feeling of a ')
+            .pause(500)
+            .type('.....')
+            .delete(5)
+            .type('<strong>hackathon</strong>')
+            .go();
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 90, density: { enable: true, value_area: 800 } },
+          color: { value: "#fff" },
+          shape: {
+            type: "polygon",
+            stroke: { width: 1, color: "#000000" },
+            polygon: { nb_sides: 3 },
+            image: { src: "img/github.svg", width: 100, height: 100 }
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 2,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+          },
+          line_linked: {
+            enable: false,
+            distance: 500,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 2
+          },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: "right",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 20 }
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "bubble" },
+            onclick: { enable: true, mode: "repulse" },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 0.5 } },
+            bubble: {
+              distance: 400,
+              size: 15.984015984015985,
+              duration: 0.3,
+              opacity: 1,
+              speed: 3
+            },
+            repulse: { distance: 271.72827172827175, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 }
+          }
+        },
+        retina_detect: true
+});
+particlesJS("awared_particle", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#f0f0f0"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.10422178395625899,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    $(document).ready(()=> {
+        $("#btnFormSubmit").on('click',(e)=> {
+            e.preventDefault();
+            alert("s");
+        })
+        // contact us form submit
+        $('#formContact').submit((e)=>{
+            e.preventDefault();
+            let data = {
+                "name": $("#name").val(),
+                "message":$("#message").val(),
+                "email" :$("#email").val()
+            };
+            $.ajax({
+                url : 'contact_process.php',
+                method: 'POST',
+                data: data,
+                success: (data)=>{
+                    if(data == "1") {
+                        alert("We'll contact you soon");
+                    }
+                    else {
+                        alert("Error occured, please reach us directly through 'info@realhack.info' if this error continues");
+                    }
+                }
+            })
+        })
+    });
+    </script>
+</body>
+</html>
